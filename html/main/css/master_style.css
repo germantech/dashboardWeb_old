@@ -9898,6 +9898,24 @@ button.btn.dropdown-toggle::after, .wysihtml5-toolbar .btn.dropdown-toggle::afte
   color: #fff;
 }
 
+.btn-dark-blue {
+  background-color: #8C96B8;
+  border-color: #8C96B8;
+  color: #fff;
+}
+
+.btn-light-blue {
+  background-color: #8AC9F8;
+  border-color: #8AC9F8;
+  color: #fff;
+}
+
+.btn-light-yellow {
+  background-color: #FDC669;
+  border-color: #FDC669;
+  color: #fff;
+}
+
 .btn-primary:hover {
   background-color: #34426f;
   border-color: #34426f;
@@ -14043,6 +14061,18 @@ h1.error-title {
   color: #868e96 !important;
 }
 
+.text-dark-blue {
+  color: #b2b9cf !important;
+}
+
+.text-light-blue {
+  color: #b1dbfa !important;
+}
+
+.text-light-yellow {
+  color: #fed99b !important;
+}
+
 .text-dark {
   color: #212121 !important;
 }
@@ -15936,6 +15966,14 @@ hr {
     top: 30%;
     margin: 0 auto;
     width: 100%;
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 24px;
 }
 
 
