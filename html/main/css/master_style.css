@@ -2393,7 +2393,6 @@ input[type="color"] {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-        border: 1px solid #e6ecf5;
 }
 .pull-up {
     -webkit-transition: all .25s ease;
@@ -2828,6 +2827,7 @@ input[type="color"] {
     padding: 1.25rem 1.5rem;
 	    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
+    border-radius: 15px;
 }
 .box.box-transparent .box-body{
 	border-radius: 0px 0px 15px 15px;
