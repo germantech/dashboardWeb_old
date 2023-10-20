@@ -14686,6 +14686,9 @@ animation: AnimationName 20s ease infinite;
 .text-light-blue {
     color: #3da5f4;
 }
+.text-dark-light {
+  color: #373B3E;
+}
 .text-green {
     color: #06D73E;
 }
