@@ -514,11 +514,9 @@ var newCust = [[0, 2], [1, 3], [2,6], [3, 5], [4, 7], [5, 8], [6, 10]];
 
 	/**************** PIE CHART *******************/
    var piedata = [
-      { label: "Series 1", data: [[1,10]], color: '#405189'},
-      { label: "Series 2", data: [[1,30]], color: '#212121'},
-      { label: "Series 3", data: [[1,90]], color: '#00c689'},
-      { label: "Series 4", data: [[1,70]], color: '#fda006'},
-      { label: "Series 5", data: [[1,80]], color: '#f1536e'}
+      { label: "Vincendas", data: [[1,65]], color: '#2D86C6'},
+      { label: "Vencendo", data: [[1,15]], color: '#fda006'},
+      { label: "Vencidas", data: [[1,20]], color: '#f1536e'}
 	 ];
 
     $.plot('#flotPie1', piedata, {
@@ -559,6 +557,8 @@ var newCust = [[0, 2], [1, 3], [2,6], [3, 5], [4, 7], [5, 8], [6, 10]];
         clickable: true
       }
     });
+
+
 
     function labelFormatter(label, series) {
 		  return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
