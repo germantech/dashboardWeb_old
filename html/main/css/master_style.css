@@ -2543,6 +2543,31 @@ input[type="color"] {
   border-color: #212121;
 }
 
+.box-orange {
+  background-color: #ff8243 ;
+}
+
+.box-orange.box-bordered {
+  border-color: #ff8243 ;
+}
+
+.box-green {
+  background-color: #36a705  ;
+}
+
+.box-green.box-bordered {
+  border-color: #36a705  ;
+}
+
+.box-roxo {
+  background-color: #022546  ;
+}
+
+.box-roxo.box-bordered {
+  border-color: #022546  ;
+}
+
+
 .box-outline-primary {
   background-color: #fff;
   border: 1px solid #405189;
@@ -2827,7 +2852,7 @@ input[type="color"] {
     padding: 1.25rem 1.5rem;
 	    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
 }
 .box.box-transparent .box-body{
 	border-radius: 0px 0px 15px 15px;
