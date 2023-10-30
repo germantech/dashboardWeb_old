@@ -9934,6 +9934,12 @@ button.btn.dropdown-toggle::after, .wysihtml5-toolbar .btn.dropdown-toggle::afte
   color: #fff;
 }
 
+.btn-light-brown {
+  background-color: #d1c1bc;
+  border-color: #d1c1bc;
+  color: #fff;
+}
+
 .btn-light-yellow {
   background-color: #FDC669;
   border-color: #FDC669;
@@ -14617,6 +14623,11 @@ animation: AnimationName 20s ease infinite;
 .bg-light-blue {
     background-color: #4ad2ff !important;
 }
+
+.bg-light-brown {
+  background-color: #d1c1bc !important;
+}
+
 .bg-green {
     background-color: #06D73E;
 }
