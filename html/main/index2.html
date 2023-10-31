@@ -363,8 +363,6 @@
 
 					</div>
 
-
-
 					<!-- Total de juros e multas: soma de tudo que a empresa tem pra pagar referente as contas em atraso
 
 						Despesas previstas: tudo que está previsto no período para ser pago
@@ -372,8 +370,6 @@
 						De gráficos abaixo vamos fazer similar ao business onde visualmente o usuário consiga ver um comparativo do mês atual olhando para 12 meses atrás
 
 						Dentro de cada um desses totalizadores precisamos colocar o filtro do pedido também -->
-
-
 
 					<div class="row">
 						<div class="col-12">
@@ -393,273 +389,264 @@
 												<span class="hidden-xs-down">Receber</span></a> </li>
 									</ul>
 									<!-- Tab panes -->
-									<div class="row tab-content">
-										<div class="col-xl-12 col-12">
-											<div class="tab-pane active" id="pagar" role="tabpanel">
-
-												<!--Box search!-->
-												<div class="box">
-													<div class="box-header with-border bg-light">
-														<h4 class="box-title">Contas à pagar</h4>
-														<div class="box-controls pull-right bg-transparent">
-															<div class="lookup lookup-circle lookup-right">
-																<input type="text" name="s" placeholder="Pesquisar">
-															</div>
-														</div>
-													</div>
-
-													<div class="box-body no-padding">
-														<div class="table-responsive">
-															<table id="example1" class="table table-bordered table-hover">
-																<thead>
-																	<tr>
-																		<th>Numero</th>
-																		<th>Tipo</th>
-																		<th>Vencimento</th>
-																		<th>Nº Documento</th>
-																		<th>Cliente/Fornecedor</th>
-																		<th>Valor</th>
-																		<th>Origem</th>
-																		<th>Observação</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td>17</td>
-																		<td>Pagar</td>
-																		<td>20/10/2023</td>
-																		<td>50</td>
-																		<td>João Pedro</td>
-																		<td>R$ 15.000</td>
-																		<th>NF-e</th>
-																		<th>Será pago em dinheiro</th>
-																	</tr>
-																	<tr>
-																		<td>18</td>
-																		<td>Pagar</td>
-																		<td>20/10/2023</td>
-																		<td>45</td>
-																		<td>João Pedro</td>
-																		<td>R$ 25.000</td>
-																		<th>NFC-e</th>
-																		<th>Será pago em dinheiro</th>
-																	</tr>
-																	<tr>
-																		<td>19</td>
-																		<td>Pagar</td>
-																		<td>20/10/2023</td>
-																		<td>80</td>
-																		<td>João Pedro</td>
-																		<td>R$ 5.000</td>
-																		<th>NFC-e</th>
-																		<th>Será pago em dinheiro</th>
-																	</tr>
-																	<tr>
-																		<td>20</td>
-																		<td>Pagar</td>
-																		<td>20/10/2023</td>
-																		<td>40</td>
-																		<td>João Pedro</td>
-																		<td>R$ 5.000</td>
-																		<th>NFC-e</th>
-																		<th>Será pago em dinheiro</th>
-																	</tr>
-																</tbody>
-															</table>
+									<div class="tab-content">
+										<div class="tab-pane active" id="pagar" role="tabpanel">
+											<!--Box search!-->
+											<div class="box">
+												<div class="box-header with-border bg-light">
+													<h4 class="box-title">Contas à pagar</h4>
+													<div class="box-controls pull-right bg-transparent">
+														<div class="lookup lookup-circle lookup-right">
+															<input type="text" name="s" placeholder="Pesquisar">
 														</div>
 													</div>
 												</div>
+
+												<div class="box-body no-padding">
+													<div class="table-responsive">
+														<table id="example1" class="table table-bordered table-hover">
+															<thead>
+																<tr>
+																	<th>Numero</th>
+																	<th>Tipo</th>
+																	<th>Vencimento</th>
+																	<th>Nº Documento</th>
+																	<th>Cliente/Fornecedor</th>
+																	<th>Valor</th>
+																	<th>Origem</th>
+																	<th>Observação</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>17</td>
+																	<td>Pagar</td>
+																	<td>20/10/2023</td>
+																	<td>50</td>
+																	<td>João Pedro</td>
+																	<td>R$ 15.000</td>
+																	<th>NF-e</th>
+																	<th>Será pago em dinheiro</th>
+																</tr>
+																<tr>
+																	<td>18</td>
+																	<td>Pagar</td>
+																	<td>20/10/2023</td>
+																	<td>45</td>
+																	<td>João Pedro</td>
+																	<td>R$ 25.000</td>
+																	<th>NFC-e</th>
+																	<th>Será pago em dinheiro</th>
+																</tr>
+																<tr>
+																	<td>19</td>
+																	<td>Pagar</td>
+																	<td>20/10/2023</td>
+																	<td>80</td>
+																	<td>João Pedro</td>
+																	<td>R$ 5.000</td>
+																	<th>NFC-e</th>
+																	<th>Será pago em dinheiro</th>
+																</tr>
+																<tr>
+																	<td>20</td>
+																	<td>Pagar</td>
+																	<td>20/10/2023</td>
+																	<td>40</td>
+																	<td>João Pedro</td>
+																	<td>R$ 5.000</td>
+																	<th>NFC-e</th>
+																	<th>Será pago em dinheiro</th>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
 											</div>
+										</div>
 
 
 
-											<div class="tab-pane" id="receber" role="tabpanel">
+										<div class="tab-pane" id="receber" role="tabpanel">
 
-												<!--Box search!-->
+											<!--Box search!-->
+											<div class="box">
+												<div class="box-header with-border bg-light">
+													<h4 class="box-title">Contas à receber</h4>
+													<div class="box-controls pull-right">
+														<div class="lookup lookup-circle lookup-right">
+															<input type="text" name="s" placeholder="Pesquisar">
+														</div>
+													</div>
+												</div>
+
+												<div class="box-body no-padding">
+													<div class="table-responsive">
+														<table id="example2" class="table table-bordered table-hover">
+															<thead>
+																<tr>
+																	<th>Numero</th>
+																	<th>Tipo</th>
+																	<th>Vencimento</th>
+																	<th>Nº Documento</th>
+																	<th>Cliente/Fornecedor</th>
+																	<th>Valor</th>
+																	<th>Origem</th>
+																	<th>Observação</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>2</td>
+																	<td>Receber</td>
+																	<td>20/10/2023</td>
+																	<td>40</td>
+																	<td>João Pedro</td>
+																	<td>R$ 5.000</td>
+																	<th>NFC-e</th>
+																	<th>Será pago em dinheiro</th>
+																</tr>
+																<tr>
+																	<td>3</td>
+																	<td>Receber</td>
+																	<td>20/10/2023</td>
+																	<td>60</td>
+																	<td>João Pedro</td>
+																	<td>R$ 5.000</td>
+																	<th>NFC-e</th>
+																	<th>Será pago em dinheiro</th>
+																</tr>
+																<tr>
+																	<td>4</td>
+																	<td>Receber</td>
+																	<td>20/10/2023</td>
+																	<td>40</td>
+																	<td>João Pedro</td>
+																	<td>R$ 1.000</td>
+																	<th>NFC-e</th>
+																	<th>Será pago em dinheiro</th>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<!-- /.box-body -->
+										</div>
+
+
+										<!-- As contas vencendo serão exibidas quando a data de vencimento tem a diferença entre a data atual e a data de vencimento de até 30 dias -->
+										<!-- O status da conta deverá ser alterado para vencida sempre quando a data de vencimento for menor do que a data atual-->
+										<!-- Deve ser aplicado um order by data_vencimento asc nessa table -->
+
+
+										<div class="row">
+											<div class="col-xl-7 col-7">
 												<div class="box">
 													<div class="box-header with-border bg-light">
-														<h4 class="box-title">Contas à receber</h4>
+														<h4 class="box-title">Contas vencidas/vencendo</h4>
 														<div class="box-controls pull-right">
 															<div class="lookup lookup-circle lookup-right">
 																<input type="text" name="s" placeholder="Pesquisar">
 															</div>
 														</div>
 													</div>
-
+													<!-- /.box-header -->
 													<div class="box-body no-padding">
 														<div class="table-responsive">
-															<table id="example2" class="table table-bordered table-hover">
-																<thead>
-																	<tr>
-																		<th>Numero</th>
-																		<th>Tipo</th>
-																		<th>Vencimento</th>
-																		<th>Nº Documento</th>
-																		<th>Cliente/Fornecedor</th>
-																		<th>Valor</th>
-																		<th>Origem</th>
-																		<th>Observação</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td>2</td>
-																		<td>Receber</td>
-																		<td>20/10/2023</td>
-																		<td>40</td>
-																		<td>João Pedro</td>
-																		<td>R$ 5.000</td>
-																		<th>NFC-e</th>
-																		<th>Será pago em dinheiro</th>
-																	</tr>
-																	<tr>
-																		<td>3</td>
-																		<td>Receber</td>
-																		<td>20/10/2023</td>
-																		<td>60</td>
-																		<td>João Pedro</td>
-																		<td>R$ 5.000</td>
-																		<th>NFC-e</th>
-																		<th>Será pago em dinheiro</th>
-																	</tr>
-																	<tr>
-																		<td>4</td>
-																		<td>Receber</td>
-																		<td>20/10/2023</td>
-																		<td>40</td>
-																		<td>João Pedro</td>
-																		<td>R$ 1.000</td>
-																		<th>NFC-e</th>
-																		<th>Será pago em dinheiro</th>
-																	</tr>
-																</tbody>
+															<table class="table table-hover">
+																<tr>
+																	<th>Número</th>
+																	<th>Cliente</th>
+																	<th>Data de vencimento</th>
+																	<th>Valor total</th>
+																	<th>Status</th>
+																</tr>
+																<tr>
+																	<td><a href="javascript:void(0)">1</a></td>
+																	<td>João Pedro</td>
+																	<td><span class="text-muted"><i
+																				class="fa fa-clock-o"></i>
+																			10/10/2023</span>
+																	</td>
+																	<td>R$158.00</td>
+																	<td><span class="label label-danger">Vencida</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td><a href="javascript:void(0)">13</a></td>
+																	<td>Jeferson</td>
+																	<td><span class="text-muted"><i
+																				class="fa fa-clock-o"></i>
+																			11/10/2023</span>
+																	</td>
+																	<td>R$258.00</td>
+																	<td><span class="label label-danger">Vencida</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td><a href="javascript:void(0)">14</a></td>
+																	<td>João</td>
+																	<td><span class="text-muted"><i
+																				class="fa fa-clock-o"></i>
+																			12/10/2023</span>
+																	</td>
+																	<td>R$18.00</td>
+																	<td><span class="label label-danger">Vencida</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td><a href="javascript:void(0)">15</a></td>
+																	<td>Raul</td>
+																	<td><span class="text-muted"><i
+																				class="fa fa-clock-o"></i>
+																			10/11/2023</span>
+																	</td>
+																	<td>R$15.00</td>
+																	<td><span class="label label-warning">Vencendo</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td><a href="javascript:void(0)">20</a></td>
+																	<td>João Pedro</td>
+																	<td><span class="text-muted"><i
+																				class="fa fa-clock-o"></i>
+																			25/11/2023</span>
+																	</td>
+																	<td>R$58.00</td>
+																	<td><span class="label label-warning">Vencendo</span>
+																	</td>
+																</tr>
 															</table>
-														</div>
-													</div>
-												</div>
-												<!-- /.box-body -->
 
+														</div>
+
+													</div>
+													<!-- /.box-body -->
+												</div>
+												<!-- /.box -->
 											</div>
 
 
-
-
-
-
-											<!-- As contas vencendo serão exibidas quando a data de vencimento tem a diferença entre a data atual e a data de vencimento de até 30 dias -->
-											<!-- O status da conta deverá ser alterado para vencida sempre quando a data de vencimento for menor do que a data atual-->
-											<!-- Deve ser aplicado um order by data_vencimento asc nessa table -->
-
-
-											<div class="row">
-												<div class="col-md-12 col-sm-12 col-lg-7 col-xl-7">
-													<div class="box">
-														<div class="box-header with-border bg-light">
-															<h4 class="box-title">Contas vencidas/vencendo</h4>
-															<div class="box-controls pull-right">
-																<div class="lookup lookup-circle lookup-right">
-																	<input type="text" name="s" placeholder="Pesquisar">
-																</div>
-															</div>
-														</div>
-														<!-- /.box-header -->
-														<div class="box-body no-padding">
-															<div class="table-responsive">
-																<table class="table table-bordered table-hover">
-																	<tr>
-																		<th>Número</th>
-																		<th>Cliente</th>
-																		<th>Data de vencimento</th>
-																		<th>Valor total</th>
-																		<th>Status</th>
-																	</tr>
-																	<tr>
-																		<td><a href="javascript:void(0)">1</a></td>
-																		<td>João Pedro</td>
-																		<td><span class="text-muted"><i
-																					class="fa fa-clock-o"></i>
-																				10/10/2023</span>
-																		</td>
-																		<td>R$158.00</td>
-																		<td><span class="label label-danger">Vencida</span>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td><a href="javascript:void(0)">13</a></td>
-																		<td>Jeferson</td>
-																		<td><span class="text-muted"><i
-																					class="fa fa-clock-o"></i>
-																				11/10/2023</span>
-																		</td>
-																		<td>R$258.00</td>
-																		<td><span class="label label-danger">Vencida</span>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td><a href="javascript:void(0)">14</a></td>
-																		<td>João</td>
-																		<td><span class="text-muted"><i
-																					class="fa fa-clock-o"></i>
-																				12/10/2023</span>
-																		</td>
-																		<td>R$18.00</td>
-																		<td><span class="label label-danger">Vencida</span>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td><a href="javascript:void(0)">15</a></td>
-																		<td>Raul</td>
-																		<td><span class="text-muted"><i
-																					class="fa fa-clock-o"></i>
-																				10/11/2023</span>
-																		</td>
-																		<td>R$15.00</td>
-																		<td><span class="label label-warning">Vencendo</span>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td><a href="javascript:void(0)">20</a></td>
-																		<td>João Pedro</td>
-																		<td><span class="text-muted"><i
-																					class="fa fa-clock-o"></i>
-																				25/11/2023</span>
-																		</td>
-																		<td>R$58.00</td>
-																		<td><span class="label label-warning">Vencendo</span>
-																		</td>
-																	</tr>
-																</table>
-
-															</div>
-
-														</div>
-														<!-- /.box-body -->
+											<div class="col-12 col-lg-5">
+												<!-- interactive chart -->
+												<div class="box">
+													<div class="box-header with-border bg-light">
+														<h4 class="box-title">Gráfico contas</h4>
 													</div>
-													<!-- /.box -->
-												</div>
-
-
-												<div class="col-12 col-lg-5">
-													<!-- interactive chart -->
-													<div class="box">
-														<div class="box-header with-border bg-light">
-															<h4 class="box-title">Gráfico contas</h4>
-														</div>
-														<div class="box-body">
-															<div id="flotPie1" style="height: 250px;"></div>
-														</div>
-														<!-- /.box-body-->
+													<div class="box-body">
+														<div id="flotPie1" style="height: 250px;"></div>
 													</div>
-													<!-- /.box -->
+													<!-- /.box-body-->
 												</div>
-
+												<!-- /.box -->
 											</div>
+
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- /.box -->
-						</div>
+						<!-- /.box -->
 					</div>
 					<!-- /.col -->
 
