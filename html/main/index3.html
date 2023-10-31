@@ -162,8 +162,8 @@
 					<div class="row">
 
 						<div class="col-lg-4 col-12">
-							<div class="box pull-up">
-								<div class="box-body py-40 bg-primary">
+							<div class="box pull-up h-250">
+								<div class="box-body py-40 bg-primary d-flex-column-center">
 									<div class="calendar-icon">
 										<i class="fa fa-calendar"></i>
 									</div>
@@ -180,8 +180,8 @@
 						</div>
 
 						<div class="col-lg-4 col-12">
-							<div class="box pull-up">
-								<div class="box-body py-40 bg-info">
+							<div class="box pull-up h-250">
+								<div class="box-body py-40 bg-info d-flex-column-center">
 									<div class="calendar-icon">
 										<i class="fa fa-calendar"></i>
 									</div>
@@ -198,8 +198,8 @@
 						</div>
 
 						<div class="col-lg-4 col-12">
-							<div class="box pull-up">
-								<div class="box-body py-40 bg-warning">
+							<div class="box pull-up h-250">
+								<div class="box-body py-40 bg-warning d-flex-column-center">
 									<div class="calendar-icon">
 										<i class="fa fa-calendar"></i>
 									</div>
@@ -218,7 +218,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-6">
+						<div class="col-lg-6 col-md-12 col-12">
 							<div class="box">
 								<div class="box-header with-border bg-light-blue">
 									<h4 class="box-title">Vendas por data</h4>
@@ -253,7 +253,7 @@
 							</div>
 						</div>
 
-						<div class="col-6">
+						<div class="col-lg-6 col-md-12 col-12">
 							<div class="box">
 								<div class="box-header with-border bg-light-blue">
 									<h4 class="box-title">Horários com pico de vendas</h4>
@@ -278,8 +278,8 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xl-3 col-md-6 col-12">
-							<div class="box box-primary pull-up">
+						<div class="col-xl-3 col-md-6 col-sm-6 col-12">
+							<div class="box box-primary pull-up h-200">
 								<div class="box-body">
 									<div class="d-flex align-items-center font-size-24">
 										<div class="icon">
@@ -302,8 +302,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-md-6 col-12">
-							<div class="box box-info pull-up">
+						<div class="col-xl-3 col-md-6 col-sm-6 col-12">
+							<div class="box box-info pull-up h-200">
 								<div class="box-body">
 									<div class="d-flex align-items-center font-size-24">
 										<div class="icon">
@@ -326,8 +326,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-md-6 col-12">
-							<div class="box box-warning pull-up">
+						<div class="col-xl-3 col-md-6 col-sm-6 col-12">
+							<div class="box box-warning pull-up h-200">
 								<div class="box-body">
 									<div class="d-flex align-items-center font-size-24">
 										<div class="icon">
@@ -350,7 +350,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-md-6 col-12">
+						<div class="col-xl-3 col-md-6 col-sm-6 col-12">
 							<div class="box box-danger pull-up">
 								<div class="box-body">
 									<div class="d-flex align-items-center font-size-24">
@@ -377,16 +377,14 @@
 					</div>
 
 					<div class="row">
-						<div class="col-6">
+						<div class="col-lg-6 col-md-12 col-12">
 							<div class="box">
 								<div class="box-header with-border bg-light-blue">
 									<h4 class="box-title">Vendas por forma de pagamento</h4>
 								</div>
-								<div class="col-12">
-									<div class="table-responsive" style="max-height: 680px; overflow-x: hidden;">
-										<table id="vendas-forma-pagamento"
-											class="table table-bordered table-hover display nowrap w-p100 mt-3 ml-1"
-											style="margin-left:-10px !important;">
+								<div class="box-body no-padding">
+									<div class="table-responsive" style="max-height: 680px;">
+										<table id="vendas-forma-pagamento" class="table table-bordered table-hover">
 											<thead class="thead-light">
 												<tr>
 													<th>Tipo</th>
@@ -483,16 +481,14 @@
 							</div>
 						</div>
 
-						<div class="col-6">
+						<div class="col-lg-6 col-md-12 col-12">
 							<div class="box">
 								<div class="box-header with-border bg-light-blue">
 									<h4 class="box-title">Vendas por vendedor</h4>
 								</div>
-								<div class="col-12">
-									<div class="table-responsive" style="max-height: 680px; overflow-x: hidden;">
-										<table id="vendas-vendedor"
-											class="table table-bordered table-hover display nowrap w-p100 mt-3 ml-1"
-											style="height: auto; margin-left:-10px !important;">
+								<div class="box-body no-padding">
+									<div class="table-responsive" style="max-height: 680px;">
+										<table id="vendas-vendedor" class="table table-bordered table-hover" style="height: auto;">
 											<thead class="thead-light">
 												<tr>
 													<th>Nome</th>
@@ -619,565 +615,567 @@
 							</div>
 						</div> <!--Row-->
 
-						<div class="box">
-							<div class="box-header with-border bg-light-blue">
-								<h4 class="box-title">Vendas realizadas</h4>
-								<h6 class="subtitle">Exporte os dados para CSV, Excel ou PDF</h6>
-							</div>
-							<!-- /.box-header -->
-							<div class="box-body">
-								<div class="table-responsive" style="max-height: 680px; overflow-x: hidden;">
-									<table id="vendas-realizadas"
-										class="table table-bordered table-hover display nowrap w-p100">
-										<div class="box-body">
-											<div class="clearfix">
-												<button type="button"
-													class="btn btn-rounded btn-primary mb-5">CSV</button>
-												<button type="button"
-													class="btn btn-rounded btn-primary mb-5">Excel</button>
-												<button type="button"
-													class="btn btn-rounded btn-primary mb-5">PDF</button>
-											</div>
-											<thead class="thead-light"></thead>
-										</div>
-										<tr>
-											<th>Data/Hora</th>
-											<th>Documento</th>
-											<th>N Doc.</th>
-											<th>Custo Aprox.</th>
-											<th>Valor da venda</th>
-											<th>Lucro Aprox.</th>
-											<th>Usuário</th>
-										</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Fulano</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Ciclano</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>CF-e SAT</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>CF-e SAT</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>CF-e SAT</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>CF-e SAT</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>Auxiliar de venda</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$15,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NFC-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-											<tr>
-												<td>17/10/2023 16:18</td>
-												<td>NF-e</td>
-												<td>Nº 123</td>
-												<td>R$10,00</td>
-												<td>R$20,00</td>
-												<td>R$10,00</td>
-												<td>Admin</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr style="font-weight: bold;">
-												<th></th>
-												<th></th>
-												<td>TOTALIZADORES:</td>
-												<td>R$15.000,00</td>
-												<td>R$21.230,00</td>
-												<td>R$11.2310,00</td>
-											</tr>
-										</tfoot>
-									</table>
+						<div class="col-12">
+							<div class="box">
+								<div class="box-header with-border bg-light-blue">
+									<h4 class="box-title">Vendas realizadas</h4>
+									<h6 class="subtitle">Exporte os dados para CSV, Excel ou PDF</h6>
 								</div>
-								<!-- /.box-body -->
+								<!-- /.box-header -->
+								<div class="box-body no-padding">
+									<div class="table-responsive" style="max-height: 680px;">
+										<table id="vendas-realizadas"
+											class="table table-bordered table-hover">
+											<div class="box-body">
+												<div class="clearfix">
+													<button type="button"
+														class="btn btn-rounded btn-primary mb-5">CSV</button>
+													<button type="button"
+														class="btn btn-rounded btn-primary mb-5">Excel</button>
+													<button type="button"
+														class="btn btn-rounded btn-primary mb-5">PDF</button>
+												</div>
+												<thead class="thead-light"></thead>
+											</div>
+											<tr>
+												<th>Data/Hora</th>
+												<th>Documento</th>
+												<th>N Doc.</th>
+												<th>Custo Aprox.</th>
+												<th>Valor da venda</th>
+												<th>Lucro Aprox.</th>
+												<th>Usuário</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Fulano</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Ciclano</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>CF-e SAT</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>CF-e SAT</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>CF-e SAT</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>CF-e SAT</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>Auxiliar de venda</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$15,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NFC-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+												<tr>
+													<td>17/10/2023 16:18</td>
+													<td>NF-e</td>
+													<td>Nº 123</td>
+													<td>R$10,00</td>
+													<td>R$20,00</td>
+													<td>R$10,00</td>
+													<td>Admin</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr style="font-weight: bold;">
+													<th></th>
+													<th></th>
+													<td>TOTALIZADORES:</td>
+													<td>R$15.000,00</td>
+													<td>R$21.230,00</td>
+													<td>R$11.2310,00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<!-- /.box-body -->
+								</div>
 							</div>
 						</div>
 					</div>
