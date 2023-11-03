@@ -16223,7 +16223,7 @@ hr {
 /* INICIO RESPONSIVIDADE ADMINISTRATIVO */
 @media screen and (min-width: 767px) and (max-width: 830px) { 
   .height-blocos-administrativo {
-    height: 320px !important;
+    height: 325px !important;
   }
 }
 
