@@ -9936,25 +9936,25 @@ button.btn.dropdown-toggle::after, .wysihtml5-toolbar .btn.dropdown-toggle::afte
 
 .btn-light-danger {
   background-color: #e1acac82;
-  border-color: #e1acac82;
+  border-color: #f1536e;
   color: #fff;
 }
 .btn-light-danger:hover {
   background-color: #e1acac82;
-  border-color: #e1acac82;
+  border-color: #f1536e;
   color: #212529;
   text-decoration: none;
 }
 
 .btn-light-brown {
   background-color: #e1acac82;
-  border-color: #d1c1bc;
+  border-color: #8d6658;
   color: #fff;
 }
 
 .btn-light-gray {
   background-color: #b7b2b26b;
-  border-color: #b7b2b26b;
+  border-color: #868e96;
   color: #fff;
 }
 
@@ -16124,6 +16124,14 @@ hr {
   }
 }
 
+@media (max-width: 1199px) { 
+    .align-downloads {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-around !important;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) { 
     .valor-notas {
       display: flex !important;
@@ -16213,6 +16221,12 @@ hr {
 /* FIM RESPONSIVIDADE ESTOQUE */
 
 /* INICIO RESPONSIVIDADE ADMINISTRATIVO */
+@media screen and (min-width: 767px) and (max-width: 830px) { 
+  .height-blocos-administrativo {
+    height: 320px !important;
+  }
+}
+
 @media (max-width: 767px) { 
   .font-size-valor-administrativo {
     font-size: 30px !important;
