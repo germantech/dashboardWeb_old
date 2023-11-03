@@ -9934,9 +9934,27 @@ button.btn.dropdown-toggle::after, .wysihtml5-toolbar .btn.dropdown-toggle::afte
   color: #fff;
 }
 
+.btn-light-danger {
+  background-color: #e1acac82;
+  border-color: #e1acac82;
+  color: #fff;
+}
+.btn-light-danger:hover {
+  background-color: #e1acac82;
+  border-color: #e1acac82;
+  color: #212529;
+  text-decoration: none;
+}
+
 .btn-light-brown {
-  background-color: #d1c1bc;
+  background-color: #e1acac82;
   border-color: #d1c1bc;
+  color: #fff;
+}
+
+.btn-light-gray {
+  background-color: #b7b2b26b;
+  border-color: #b7b2b26b;
   color: #fff;
 }
 
@@ -15996,7 +16014,7 @@ hr {
 #earning{
 	height: 465px !important;
 }
- #earning2{
+#earning2{
 	height: 255px !important;
 }
 .ovd{
@@ -16051,17 +16069,10 @@ hr {
   padding: 0.5rem 1rem !important;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { 
-    .valor-vendas {
-      font-size: 27px !important;
-      line-height: 1.2 !important;
-    }
-}
-
 /* INICIO RESPONSIVIDADE FINANCEIRO */
 @media screen and (min-width: 992px) and (max-width: 1200px) { 
     .font-size-financeiro {
-      font-size: 27px !important;
+      font-size: 30px !important;
       line-height: 1.2 !important;
     }
     .height-blocos-financeiro {
@@ -16090,20 +16101,60 @@ hr {
     justify-content: center !important;
   }
 }
+
+@media (max-width: 575px) {
+  .align-title-search {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1em;
+  }
+  .height-search {
+    height: 35px !important;
+  }
+}
+
 /* FIM RESPONSIVIDADE FINANCEIRO */
 
 /* INICIO RESPONSIVIDADE VENDAS */
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+  .valor-vendas {
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) { 
     .valor-notas {
       display: flex !important;
       flex-direction: column !important;
+      justify-content: center !important;
     }
 }
 
+@media (max-width: 991px) { 
+  .titulo-vendas {
+    font-size: 27px !important;
+  }
+  .valor-vendas {
+    font-size: 30px !important;
+  }
+  .total-vendas {
+    font-size: 20px !important;
+  }
+}
+
 @media (max-width: 575px) { 
+  .titulo-vendas {
+    font-size: 24px !important;
+  }
   .valor-notas {
     display: flex !important;
     flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .comparacao-nota {
+    font-size: 15px !important;
   }
 }
 
@@ -16147,6 +16198,13 @@ hr {
   }
 }
 
+@media (max-width: 575px) {
+  .font-size-valor-estoque {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+}
+
 @media (max-width: 575px) { 
   .font-size-total {
     font-size: 15px !important;
@@ -16157,11 +16215,14 @@ hr {
 /* INICIO RESPONSIVIDADE ADMINISTRATIVO */
 @media (max-width: 767px) { 
   .font-size-valor-administrativo {
-    font-size: 40px !important;
+    font-size: 30px !important;
   } 
 }
 
 @media (max-width: 575px) { 
+  .nav-vendas {
+    justify-content: space-between !important;
+  }
   .padding-link {
     padding: 0.5rem 2rem !important;
   } 
