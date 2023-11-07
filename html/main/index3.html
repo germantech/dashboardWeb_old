@@ -26,6 +26,11 @@
 	<!-- weather weather -->
 	<link rel="stylesheet" href="../assets/vendor_components/weather-icons/weather-icons.css">
 
+	<link rel="stylesheet" href="../assets/vendor_components/fullcalendar/fullcalendar.min.css">
+	<link rel="stylesheet" href="../assets/vendor_components/fullcalendar/fullcalendarpersonalizado.min.css">
+
+	<link rel="stylesheet" href="../assets/vendor_components/fullcalendar/fullcalendar.print.min.css" media="print">
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -33,6 +38,19 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+		.hidden {
+		  display: none;
+		}
+		.btn-calendar {
+			background-color: transparent;
+			border: none;
+			color: white;
+			padding: 10px 10px !important;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 
 <body class="hold-transition skin-black sidebar-mini">
@@ -152,8 +170,11 @@
 						<div class="col-xl-3 col-lg-6 col-12">
 							<div class="box pull-up h-260">
 								<div class="box-body py-35 bg-primary d-flex flex-column justify-content-center">
-									<div class="calendar-icon">
-										<i class="fa fa-calendar"></i>
+									<button id="toggleButton" class="btn-calendar calendar-icon" onclick="showViewCalendar()">
+										<i class="fa fa-calendar" style="font-size: 25px;"></i>
+									</button>
+									<div class="hidden" id="calendar-div" style="position: absolute; width: 100%; top: 50px; left: 0px; bottom: 0px;">
+										<div id="calendar" style="background-color: #fff;border-top-left-radius: 10px 10px; border-bottom-left-radius: 10px 10px; border-top-right-radius: 10px 10px; border-bottom-right-radius: 0px 0px;"></div>
 									</div>
 									<div class="d-flex align-items-center flex-column">
 										<h6 class="titulo-vendas mb-0 font-size-20 lh-23">Vendas do dia</h6>
@@ -218,7 +239,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-6 col-md-12 col-12">
+						<div class="col-lg-6 col-md-12 col-12 mt-10">
 							<div class="box">
 								<div class="box-header with-border bg-light-blue">
 									<h4 class="box-title">Vendas por data</h4>
@@ -258,7 +279,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-6 col-md-12 col-12">
+						<div class="col-lg-6 col-md-12 col-12 mt-10">
 							<div class="box">
 								<div class="box-header with-border bg-light-blue">
 									<h4 class="box-title">Horários com pico de vendas</h4>
@@ -1251,6 +1272,23 @@
 
 	<!-- Bankio admin dashboard demo (This is only for demo purposes) -->
 	<script src="js/pages/dashboard.js"></script>
+
+	<script src="../assets/vendor_components/fullcalendar/lib/moment.min.js"></script>
+	<script src="../assets/vendor_components/fullcalendar/fullcalendarpersonalizado.js"></script>
+	
+	<!-- Bankio admin for calendar -->
+	<script src="js/pages/calendar.js"></script>
+
+	<script>
+		function showViewCalendar() {
+		  var calendar = document.getElementById("calendar-div");
+		  if (calendar.style.display === "none") {
+			calendar.style.display = "block";
+		  } else {
+			calendar.style.display = "none";
+		  }
+		}
+	</script>
 
 </body>
 

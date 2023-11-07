@@ -2852,7 +2852,6 @@ input[type="color"] {
     padding: 1.25rem 1.5rem;
 	    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    /*border-radius: 15px;*/
 }
 .box.box-transparent .box-body{
 	border-radius: 0px 0px 15px 15px;
@@ -2865,7 +2864,9 @@ input[type="color"] {
     margin-bottom: 0;
 }
 .box-body .fc {
-    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 2px #ccc;
 }
 .box-body .full-width-chart {
     margin: -10px;
@@ -16026,7 +16027,7 @@ hr {
 
 .calendar-icon {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 10px;
   color: #fff;
   font-size: 24px;
@@ -16067,6 +16068,19 @@ hr {
 
 .padding-link {
   padding: 0.5rem 1rem !important;
+}
+
+.mh-120 {
+  max-height: 120px !important;
+}
+
+.overflow-hs {
+  overflow: hidden scroll !important;
+}
+
+button#toggleButton:focus {
+  outline: 0px dotted !important;
+  outline: 0px auto -webkit-focus-ring-color !important;
 }
 
 /* INICIO RESPONSIVIDADE FINANCEIRO */
